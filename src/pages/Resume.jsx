@@ -1,8 +1,13 @@
-export default function Home() {
+import NavigationBar from "../components/NavigationBar";
+
+export default function Resume() {
   return (
-    <div>
-      <h1>Welcome</h1>
-      <p>This is my resume</p>
-    </div>
+    <>
+      <NavigationBar />
+      <div>
+        <h1>Welcome</h1>
+        <p>This is my resume</p>
+      </div>
+    </>
   );
 }
