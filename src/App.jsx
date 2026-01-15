@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
 import CV from "./pages/CV";
+import Yenuki from "./pages/Yenuki";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/cv" element={<CV />} />
+        <Route path="/yenuki" element={<Yenuki />} />
       </Routes>
     </BrowserRouter>
   );
