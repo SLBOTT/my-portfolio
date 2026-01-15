@@ -4,18 +4,18 @@ import NavigationBar from "../components/NavigationBar";
 export default function Yenuki() {
   const [clicks, setClicks] = useState(0);
   const [rotation, setRotation] = useState(0);
-  const [size, setSize] = useState(200);
+  const [showEmoji, setShowEmoji] = useState(true);
 
   const handleEmojiClick = () => {
     setClicks(clicks + 1);
     setRotation(rotation + 360);
-    setSize(size === 200 ? 300 : 200);
+    setShowEmoji(!showEmoji);
   };
 
   const handleReset = () => {
     setClicks(0);
     setRotation(0);
-    setSize(200);
+    setShowEmoji(true);
   };
 
   return (
@@ -34,11 +34,11 @@ export default function Yenuki() {
         
         <div style={{ margin: '30px 0' }}>
           <img 
-            src="/emoji.jpg" 
-            alt="Emoji" 
+            src={showEmoji ? "/emoji.jpg" : "/donkey.jpg"}
+            alt={showEmoji ? "Emoji" : "Donkey"}
             onClick={handleEmojiClick}
             style={{ 
-              width: `${size}px`,
+              width: showEmoji ? '200px' : '300px',
               height: 'auto',
               cursor: 'pointer',
               transform: `rotate(${rotation}deg)`,
@@ -48,6 +48,16 @@ export default function Yenuki() {
               userSelect: 'none'
             }}
           />
+          {!showEmoji && (
+            <p style={{
+              fontSize: '3.5rem',
+              fontWeight: 'bold',
+              color: '#f700ff',
+              marginTop: '20px'
+            }}>
+              බූරු පැටියා
+            </p>
+          )}
         </div>
 
         <p style={{ 
