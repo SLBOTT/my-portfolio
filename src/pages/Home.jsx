@@ -6,7 +6,7 @@ export default function Home() {
       <NavigationBar />
       <div>
         <h1>Welcome</h1>
-        <p>This is Home</p>
+        <p>This is Home Page</p>
       </div>
     </>
   );

@@ -6,7 +6,7 @@ export default function Resume() {
       <NavigationBar />
       <div>
         <h1>Welcome</h1>
-        <p>This is my resume</p>
+        <p>This is my Resume</p>
       </div>
     </>
   );
