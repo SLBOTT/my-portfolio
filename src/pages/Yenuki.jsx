@@ -34,7 +34,7 @@ export default function Yenuki() {
         
         <div style={{ margin: '30px 0' }}>
           <img 
-            src={showEmoji ? "public/emoji.jpg" : "public/donkey.jpg"}
+            src={showEmoji ? "/emoji.jpg" : "/donkey.jpg"}
             alt={showEmoji ? "Emoji" : "Donkey"}
             onClick={handleEmojiClick}
             style={{ 
