@@ -1,12 +1,14 @@
 import NavigationBar from "../components/NavigationBar";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
-      <NavigationBar />
       <div>
         <h1>Welcome</h1>
-        <p>This is Home</p>
+        <h2>
+          <Link to="/yenuki">Click here Yenuki</Link>
+        </h2>
       </div>
     </>
   );
