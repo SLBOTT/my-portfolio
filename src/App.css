@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+  transition: all 200ms ease-in-out;
+}
+
+.nav-link:hover {
+  border-color: #646cff;
+}
+
+.nav-link-active {
+  background: #646cff;
+  color: #fff;
+}
